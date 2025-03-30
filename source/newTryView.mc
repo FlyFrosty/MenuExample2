@@ -13,6 +13,7 @@ class newTryView extends WatchUi.WatchFace {
     function initialize() {
         WatchFace.initialize();
         menuSelector = Application.Storage.getValue("mySelection");
+        if(menuSelector==null) {menuSelector=false;}
     }
 
     // Load your resources here

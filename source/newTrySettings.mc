@@ -9,15 +9,8 @@ class newTrySettings {
     function initialize() {
         menuSelector = Application.Storage.getValue("mySelection");
         
-        if(menuSelector==null) {
-            menuSelector=false;
-        }
+        if(menuSelector==null) {menuSelector=false;}
     }
-
-    function saveSettings() {
-        Application.Storage.setValue("mySelection",menuSelector);
-    }
-
 }
 
 class newTrySettingsMenu extends WatchUi.Menu2 {
