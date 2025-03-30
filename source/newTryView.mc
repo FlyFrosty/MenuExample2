@@ -34,10 +34,10 @@ class newTryView extends WatchUi.WatchFace {
 
         if (menuSelector) {
             System.println("View line 36");
-            dc.setColor(Graphics.COLOR_DK_BLUE, Graphics.COLOR_TRANSPARENT);
+            dc.setColor(Graphics.COLOR_DK_RED, Graphics.COLOR_TRANSPARENT);
         } else {
             System.println("View line 39");
-            dc.setColor(Graphics.COLOR_RED, Graphics.COLOR_TRANSPARENT);
+            dc.setColor(Graphics.COLOR_BLUE, Graphics.COLOR_TRANSPARENT);
         }
         dc.drawText(wWidth/2,wHeight/2,Graphics.FONT_LARGE,timeString,Graphics.TEXT_JUSTIFY_CENTER);
 
